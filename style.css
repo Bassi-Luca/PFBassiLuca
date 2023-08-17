@@ -111,12 +111,12 @@ li a {
   
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .header__mobile {
     display: none;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   body{
     margin-left: 0;
     background-color: aqua;
@@ -267,7 +267,7 @@ iframe {
   background-color: #f1f1f1;
   margin-bottom: 170px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
   .input-text-seccion {
     width: 70%;
     height: auto;
