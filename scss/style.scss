@@ -91,22 +91,6 @@ nav {
   padding-right: 5px;
   filter: brightness(0) invert(1);
 }
-ul {
-  font-size: 20px;
-  flex: 1 1 0px;
-  font-family: "Alegreya Sans", sans-serif;
-  text-decoration: none;
-  filter: brightness(0) invert(1);
-  width: 60%;
-  padding-top: 20px;
-  margin-left: 0;
-}
-li a {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 20px;
-  color: whitesmoke;
-  text-decoration: none;
-}
 
 .buscador {
   float: right;
@@ -207,7 +191,7 @@ li a {
   font-size: 90px;
 }
 
-.text-block p {
+.text-block {
   top: 2px;
   margin-left: 30px;
   width: 447px;
@@ -255,24 +239,27 @@ iframe {
   @include buttons-section;
 }
 
+.text-ul{
+  color: black;
+}
+
 .p__seccion {
   /* white */
   border-radius: 2px; /* border-xl */
   border-width: 1px;
   border-color: #e0e2e0ff; /* neutral-300 */
-  padding: 20px 64px;
+ 
   font-family: "Alegreya Sans", sans-serif;
   font-size: 17px;
-  line-height: 48px;
   font-weight: 700px;
   color: #363937ff;
 }
 
 .seccion__indicaciones {
   margin-top: 150px;
-  background-color: $background-white;
   margin-bottom: 170px;
 }
+
 @media screen and (max-width: 1000px) {
   .input-text-seccion {
     width: 70%;

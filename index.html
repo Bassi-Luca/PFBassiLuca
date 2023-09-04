@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="imagenes/E.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="shortcut icon" href="../imagenes/E.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -13,6 +13,9 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.flaticon.com/free-icons/search" title="search icons" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -123,37 +126,60 @@
     <div class="row">
       <div class="seccion__text col-sm-6" ">
         <h2 class=" h2__tit text-center">La aromaterapia</h2>
-        <p class="p__seccion overflow-hidden p-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p class="p__seccion lh-base overflow-hidden p-3">
+          La aromaterapia es una disciplina terapéutica que utiliza los aceites esenciales de las plantas para promover
+          la salud y el bienestar. Los aceites esenciales son extractos concentrados de las plantas que contienen una
+          amplia gama de compuestos químicos que pueden tener efectos beneficiosos sobre el cuerpo y la mente.
         </p>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Launch static backdrop modal
+        <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modalAroma-terapia">
+          Mas detalles
         </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <input class="input-text-seccion ms-3" type="submit" value="Mas detalles" />
       </div>
       <div class="col-sm-6 p-1">
         <img class="seccion__img img-fluid h-100" src="./imagenes/aroma1.jpeg" alt="aroma1" />
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAroma-terapia" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content" overflow-y="scroll">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">La aromaterapia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Beneficios de la aromaterapia</h6>
+          <li>Reducción del estrés</li>
+          <li>Alivio de la ansiedad</li>
+          <li>Mejora del estado de ánimo</li>
+          <li>Promoción del sueño</li>
+          <li>Alivio del dolor</li>
+          <li>Tratamiento de trastornos de la piel</li>
+          <li>Tratamiento de trastornos digestivos</li>
+          <li>Tratamiento de trastornos respiratorios</li>
+          <br>
+          <h6>Cómo usar la aromaterapia</h6>
+          <li>Inhalación: Los aceites esenciales se pueden inhalar directamente o vaporizandolos en el aire.</li>
+          <li>Aplicaciones tópicas: Los aceites esenciales se pueden aplicar a la piel diluidos en un aceite
+            portador, como el aceite de almendras dulces o el aceite de coco.</li>
+          <li>Masaje: Los aceites esenciales se pueden agregar a los aceites de masaje para crear una experiencia
+            relajante y terapéutica.</li>
+          <br>
+          <h6>Consejos para una aromaterapia segura</h6>
+          <li>Use aceites esenciales de alta calidad.</li>
+          <li>Diluye los aceites esenciales en un aceite portador antes de aplicarlos a la piel.</li>
+          <li>Evite la exposición a los ojos y la boca.</li>
+          <li>No use aceites esenciales en bebés o niños pequeños.</li>
+          <li>Si experimenta algún efecto secundario, deje de usar inmediatamente el aceite esencial y busque
+            atención médica.</li>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
@@ -167,28 +193,129 @@
       </iframe>
       <div class="seccion__text col-sm-6">
         <h2 class="h2__tit text-center">Beneficios de la aromaterapia</h2>
-        <p class="p__seccion overflow-hidden p-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          praesentium.</p>
-        <input class="input-text-seccion ms-3" type="submit" value="Mas detalles" />
+        <p class="p__seccion overflow-hidden p-3 lh-base">
+          El uso de aceites esenciales para fines terapéuticos es una práctica ancestral que se remonta a miles de años.
+          Las primeras civilizaciones, como los egipcios, los griegos y los romanos, usaban aceites esenciales para
+          tratar una variedad de dolencias, como el dolor, las infecciones y los trastornos mentales.
+        </p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modalBeneficios">
+          Mas detalles
+        </button>
       </div>
     </div>
   </div>
-
+  <div class="modal fade" id="modalBeneficios" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content" overflow-y="scroll">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Beneficios de la aromaterapia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            En la Edad Media, la aromaterapia se volvió menos popular, pero fue redescubierta en el siglo XIX por el
+            químico francés René-Maurice Gattefossé. Gattefossé se quemó gravemente en un laboratorio y descubrió que el
+            aceite esencial de lavanda ayudaba a calmar el dolor y la inflamación.
+          </p>
+          <p>
+            Desde entonces, la aromaterapia ha ganado popularidad en todo el mundo. Hoy en día, se utiliza para tratar
+            una variedad de problemas de salud, desde el estrés y la ansiedad hasta el dolor y las infecciones.
+          </p>
+          <p>
+            Los aceites esenciales se pueden usar de varias maneras, incluyendo:
+          </p>
+          <li>Inhalación: Los aceites esenciales se pueden inhalar directamente, vaporizarlos en el aire o agregarlos
+            a un baño.</li>
+          <li>Aplicaciones tópicas: Los aceites esenciales se pueden aplicar a la piel diluidos en un aceite portador,
+            como el aceite de almendras dulces o el aceite de coco.</li>
+          <li>Masaje: Los aceites esenciales se pueden agregar a los aceites de masaje para crear una experiencia
+            relajante y terapéutica.</li>
+          <p>
+            Es importante consultar a un aromaterapeuta calificado antes de usar aceites esenciales, especialmente si
+            está embarazada, amamantando o tiene alguna condición médica.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="seccion container border rounded" data-aos="fade-right">
     <div class="row">
       <div class="seccion__text col-sm-6">
         <h2 class="h2__tit text-center">Historia de la aromaterapia</h2>
-        <p class="p__seccion overflow-hidden p-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <p class="p__seccion overflow-hidden p-3 lh-base text-break">
+          La aromaterapia es una práctica terapéutica que utiliza aceites esenciales para mejorar el bienestar físico,
+          mental y emocional. La historia de la aromaterapia se remonta a miles de años atrás, cuando las culturas
+          antiguas utilizaban hierbas y especias para fines medicinales y espirituales.
+          <br>
+          Las primeras evidencias del uso de la aromaterapia se encuentran en las antiguas civilizaciones de Egipto,
+          Mesopotamia y China...
         </p>
-        <input class="input-text-seccion ms-3" type="submit" value="Mas detalles" />
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modalHistoriaAroma">
+          Mas detalles
+        </button>
       </div>
       <div class="col-sm-6 p-1">
         <img class="seccion__img img-fluid h-100" src="./imagenes/aroma3.jpeg" alt="aroma3" />
       </div>
     </div>
   </div>
+  <div class="modal fade" id="modalHistoriaAroma" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content" overflow-y="scroll">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Historia de la aromaterapia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            En Egipto, por ejemplo, los aceites esenciales se utilizaban para embalsamar a los
+            muertos, para curar enfermedades y para realizar rituales religiosos...En Mesopotamia, los aceites
+            esenciales se utilizaban para tratar heridas y enfermedades, y en China se
+            utilizaban para promover la salud y el
+            bienestar.En la Edad Media, el uso de la aromaterapia se mantuvo en muchas culturas, pero también se vio
+            eclipsado por el desarrollo de la medicina occidental. Sin embargo, la aromaterapia siguió practicándose en
+            algunas
+            culturas, como la hindú y la árabe.
 
+            En el siglo XIX, la aromaterapia comenzó a resurgir en Europa y en los Estados Unidos. Esto se debió en
+            parte al trabajo de René-Maurice Gattefossé, un químico francés que descubrió las propiedades curativas de
+            los aceites esenciales. Gattefossé se quemó la mano en un accidente de laboratorio y se sumergió en un
+            recipiente lleno de aceite esencial de lavanda. Se sorprendió al ver que sus heridas sanaron rápidamente sin
+            dejar cicatrices.
+
+            En el siglo XX, la aromaterapia se convirtió en una práctica más popular. Esto se debió en parte al trabajo
+            de Marguerite Maury, una enfermera francesa que desarrolló un sistema de aromaterapia basado en el uso de
+            aceites esenciales para tratar diferentes trastornos. Maury publicó varios libros sobre aromaterapia, que
+            ayudaron a difundir su práctica.
+
+            En la actualidad, la aromaterapia es una práctica reconocida por la Organización Mundial de la Salud (OMS).
+            Se utiliza en muchos países para tratar una variedad de condiciones, como el estrés, el dolor y la ansiedad.
+
+            Algunas de las principales características de la aromaterapia son:
+
+            <li>Utiliza aceites esenciales, que son sustancias concentradas que se extraen de plantas.</li>
+            <li>Los aceites esenciales se pueden utilizar de diversas maneras, como por inhalación, aplicación tópica y
+              consumo.</li>
+            <li>La aromaterapia se utiliza para mejorar el bienestar físico, mental y emocional.</li>
+            <li>La aromaterapia es una práctica segura y eficaz, pero es importante consultar a un profesional de la
+              salud
+              antes de utilizarla.</li>
+          </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="seccion__indicaciones container border rounded animate__animated animate__fadeIn">
     <div class="col-12">
       <h2 class="h2__tit text-center mt-3">Consejos generales</h2>
@@ -198,16 +325,24 @@
         <img class="w-100 rounded-2" src="./imagenes/Beneficios-de-la-aromaterapia-3025604608" alt="b">
       </div>
       <div class="col-sm p-3">
-        <p class="border-start p-3 border-3 rounded-start border-info fst-italic">Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Ab fugiat, perspiciatis dolor vel laborum optio beatae necessitatibus rem ex
-          omnis tempora? Suscipit deleniti reiciendis nesciunt aperiam velit et omnis ipsum.</p>
+        <p class="border-start p-3 border-3 rounded-start border-info fst-italic">
+          Los aceites esenciales son sustancias concentradas que se extraen de plantas. Se utilizan en aromaterapia
+          para mejorar el bienestar físico, mental y emocional.
+          Para aplicar los aceites esenciales de forma segura y eficaz, es importante seguir las siguientes
+          indicaciones generales:
+          <br>
+          <li>Elige aceites esenciales de alta calidad.</li>
+          <li>Diluyé los aceites esenciales antes de aplicarlos.</li>
+          <li>Empieza con una dosis pequeña.</li>
+          <li>Evita la exposición a la luz solar.</li>
+          <li>Evita la aplicación en niños pequeños y mujeres embarazadas o en periodo de lactancia.</li>
+        </p>
       </div>
     </div>
   </div>
   <div class="col-md-6 offset-md-3" data-aos="zoom-in">
     <img class="img-fluid p-1" src="./imagenes/instrucicones_aceites.png" alt="indicaciones">
   </div>
-
 
   <!--------------------------------------------------------------------Footer---------------------------------->
   <footer class=" footer container mt-5 p-2 border rounded">
@@ -241,10 +376,11 @@
 
   </footer>
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script> AOS.init();</script>
