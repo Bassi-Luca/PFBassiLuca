@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="shortcut icon" href="../imagenes/E.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,11 +16,17 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-
-  <title>Aroma vida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <meta name="description" content="Aroma Vida sitio de infomracion sobre aceites esenciales | seccion de tips para el bienestar">
+  <meta name="keywords" content="aceites, aroma, bienestar, spa, salud, tips, cosmetic, rool on, venta, aromaterapia, mensajes, info, correo, escribir, opiniones">
+  <title>Aroma vida | Contactos| sitio de aromaterapia en Guadalajara</title>
 </head>
 
-<body class=" body border rounded ">
+<body class=" body body__mobile border rounded ">
   <!--navbar-->
   <nav class="navbar__menu border rounded object-fit-cover p-2">
     <div class="navbar container navbar-expand">
@@ -55,7 +61,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-center text-white" href="../paginas/contacto.html">
+          <a class="active nav-link text-center text-white" href="../paginas/contacto.html">
             <img class="nav-icon mx-auto d-block img-fluid" src="../imagenes/icon-contactos.png" alt="Contactos" />
             Contacto
           </a>
@@ -68,91 +74,91 @@
 
 
   <!--mobile header -->
-    <div class="header__mobile grid header container">
-      <div class="row ">
-        <div class="col-9">
-          <div class="header__img img-fluid p-1 border rounded-5">
-            <h1 class="h1__tit p-3">Contactos</h1>
-            <p class="p__titulo">
-              ¡Preguntanos!
-            </p>
-          </div>
-        </div>
-        <div class="row info__buscador col  mt-4">
-          <div class="col img-fluid p-2">
-            <a href="https://www.facebook.com">
-              <img class="rounded-circle" src="../imagenes/fb-logo.png" alt="fb-logo" />
-            </a>
-          </div>
-          <div class="col-img p-2">
-            <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
-              <img class="rounded-circle" src="../imagenes/icon_whats.png" alt="whats-logo" />
-            </a>
-          </div>
-
+  <div class="header__mobile grid header container">
+    <div class="row mt-4">
+      <div class="col-9 text-center  px-3">
+        <div class="header__img border rounded-5">
+          <h1 class="h1__tit pt-3">Contactos</h1>
+          <p class="p__titulo">
+            ¡Preguntanos!
+          </p>
         </div>
       </div>
-    </div>
-
-    <!--header tablet-pc-->
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-3">
-          <h3 class="header__tablet-pc">¿Necesitas
-            de nuestra ayuda?
-          </h3>
-          <p class="header__tablet-pc">Escribenos aqui</p>
-          <img class="img-fluid" src="../imagenes/helpdesk" alt="">
+      <div class="row info__buscador col mt-4">
+        <div class="col w-50 p-2">
+          <a href="https://www.facebook.com">
+            <img class="rounded-circle" src="../imagenes/fb-logo.png" alt="fb-logo" />
+          </a>
         </div>
-        <div class="col-sm-8">
-          <form class="row gy-5">
-            <div class="col-sm-8 ms-0 gy-5">
-              <label for="inputNombre" class="form-label">Nombre:</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Tu nombre">
-              <label for="inputApellido" class="form-label mt-4">Apellido:</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Tu Apellido/s">
-              <label for="inputEmail4" class="form-label mt-4">Email:</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Tu cooreo">
-              <label for="inputState" class="form-label">Objecto de la pregunta:</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>Info generales</option>
-                <option>Sobre un producto</option>
-                <option>Preparacion aceites</option>
-                <option>Otros</option>
-
-              </select>
-
-              <label for="comment">Tu comentario:</label>
-              <textarea class="form-control" rows="20" id="comment" name="text"
-                placeholder="Escribas aqui tu pregunta"></textarea>
-            </div>
-            <div class="col-8 ms-0">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Control de datos
-                </label>
-                <button type="submit" class="btn btn-primary">Envia</button>
-              </div>
-            </div>
-          </form>
+        <div class="col-img p-2">
+          <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
+            <img class="rounded-circle" src="../imagenes/icon_whats.png" alt="whats-logo" />
+          </a>
         </div>
+
       </div>
     </div>
+  </div>
+
+  <!--header tablet-pc-->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="header__tablet-pc animate__animated animate__shakeY">¿Necesitas
+          de nuestra ayuda?
+        </h3>
+        <p class="header__tablet-pc">Escribenos aqui</p>
+        <img class="img-fluid rounded-2" src="../imagenes/helpdesk" alt="">
+      </div>
+      <div class="col-sm-8">
+        <form class="row gy-5">
+          <div class="col-sm-8 ms-0 gy-5">
+            <label for="inputNombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Tu nombre">
+            <label for="inputApellido" class="form-label mt-4">Apellido:</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Tu Apellido/s">
+            <label for="inputEmail4" class="form-label mt-4">Email:</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Tu correo">
+            <label for="inputState" class="form-label mt-4">Objecto de la pregunta:</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>Info generales</option>
+              <option>Sobre un producto</option>
+              <option>Preparacion aceites</option>
+              <option>Otros</option>
+
+            </select>
+
+            <label class="mt-4" for="comment">Tu comentario:</label>
+            <textarea class="form-control" rows="20" id="comment" name="text"
+              placeholder="Escribas aqui tu pregunta"></textarea>
+          </div>
+          <div class="col-8 ms-0">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Control de datos
+              </label>
+              <button type="submit" class="btn btn-primary">Envia</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   </div>
   <!---->
 
 
   <!--------------------------------------------------------------------Footer---------------------------------->
-  <footer class=" footer container h-25 mt-5 border rounded">
+  <footer class=" footer container h-25 mt-5 p-2 border rounded">
     <div class="row">
       <div class="col-sm-4 text-center">
         <h3 class="foot__h3">Contactos</h3>
         <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
-          <img class="img__foot img-fluid mt-2" src="../imagenes/icon_whats.png" alt="aroma_footer1_whats" w />
+          <img class="img__foot-wapp img-fluid mt-2" src="../imagenes/icon_whats.png" alt="aroma_footer1_whats" w />
         </a>
       </div>
       <div class="col-sm-4 text-center">
@@ -176,15 +182,19 @@
         </div>
       </div>
     </div>
-    <div class="foot__copyright text-center border rounded h-25 p-3">
-      © 2023 Copyright: Bassi Luca - Aroma Vida
-    </div>
+
   </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+
+  <div class="foot__copyright text-center border rounded h-25 p-3">
+    © 2023 Copyright: Bassi Luca - Aroma Vida
+  </div>
 </body>
 <br>
 <br>

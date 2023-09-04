@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="shortcut icon" href="../imagenes/E.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,17 +13,23 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.flaticon.com/free-icons/search" title="search icons" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-
-  <title>Aroma vida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+ 
+  <meta name="description" content="Aroma Vida sitio de infomracion sobre aceites esenciales | seccion de nuestro bienestar corporal">
+  <meta name="keywords" content="aceites, aroma, bienestar, spa, salud, tips, cosmetic, rool on, venta, aromaterapia">
+  <title>Aroma Vida | Area bienestar | sitio de aromaterapia en Guadalajara</title>
 </head>
 
-<body class="border rounded ">
+<body>
   <!--navbar-->
   <nav class="navbar__menu border rounded object-fit-cover p-2">
-    <div class="navbar container navbar-expand">
+    <div class="navbar container navbar-expand ">
       <a class="navbar-brand img-fluid" href="../index.html">
         <img src="../imagenes/E.png" alt="Logo" class="logo_pc rounded-pill">
       </a>
@@ -36,7 +42,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-center text-white" href="../paginas/area_bienestar.html">
+          <a class="active nav-link text-center text-white" href="../paginas/area_bienestar.html">
             <img class="nav-icon mx-auto d-block img-fluid" src="../imagenes/icon-spa.png" alt="wellnes" />
             Aceites esenciales
           </a>
@@ -66,38 +72,410 @@
 
   </nav>
 
+  <!--mobile header -->
+  <div class="header__mobile grid header container">
+    <div class="row mt-4">
+      <div class="col-9 text-center  px-3">
+        <div class="header__img border rounded-5">
+          <h1 class="h1__tit pt-3">Aceites esenciales</h1>
+          <p class="p__titulo">
+            Caracteristicas de los productos!
+          </p>
+        </div>
+      </div>
+      <div class="row info__buscador col mt-4">
+        <div class="col w-50 p-2">
+          <a href="https://www.facebook.com">
+            <img class="rounded-circle" src="../imagenes/fb-logo.png" alt="fb-logo" />
+          </a>
+        </div>
+        <div class="col-img p-2">
+          <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
+            <img class="rounded-circle" src="../imagenes/icon_whats.png" alt="whats-logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-  <div class="card" style="width: 18rem;">
-    <img src="../imagenes/Work-in-Progress-4247752775" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Estamos trabajando</h5>
-      <p class="card-text">Esta zona se està mejorando para ti!.</p>
-      <a href="../index.html" class="btn btn-primary stretched-link">Regresa a la pagina principal!</a>
+  <!------------------------------------cards de productos-->
+  <div class="container carousel__slide-tablet">
+    <div class="col-12">
+      <h2 class="h2__tit text-center mt-3">Area bienestar</h2>
+      <p class="text-center">Nuestros aceites esenciales para tu bienestar</p>
+    </div>
+    <div class="container mt-5 card-group" data-aos="fade-right">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 ">
+        <div class="col-md g-2 animate__animated animate__fadeInLeft">
+          <div class="card h-100">
+            <img src="../imagenes/limon.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de limon</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md g-2 animate__animated animate__fadeInLeftBig">
+          <div class="card h-100">
+            <img src="../imagenes/arancia.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de naranja</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md g-2 animate__animated animate__fadeIn">
+          <div class="card h-100">
+            <img src="../imagenes/lavanda.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de lavanda</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md g-2 animate__animated animate__fadeInRightBig">
+          <div class="card h-100">
+            <img src="../imagenes/Eucalyptus.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de Eucalipto</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </p>
+              
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md g-2 animate__animated animate__fadeInRight">
+          <div class="card h-100">
+            <img src="../imagenes/menta.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de Menta</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 carousel__slide-tablet" data-aos="fade-right">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 card-group">
+        <div class="col-md g-2">
+
+          <div class="card h-100">
+            <img src="../imagenes/limon.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de limon</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md g-2">
+
+          <div class="card h-100">
+            <img src="../imagenes/arancia.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de naranja</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md g-2">
+
+          <div class="card h-100">
+            <img src="../imagenes/lavanda.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de lavanda</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md g-2">
+          <div class="card h-100">
+            <img src="../imagenes/Eucalyptus.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de Eucalipto</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md g-2">
+          <div class="card h-100">
+            <img src="../imagenes/menta.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de Menta</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-----------------------------card mobile-->
+  <div class="d-flex justify-content-center">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel__slide-mobile m-5 justify-content-center"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card h-100">
+            <img src="../imagenes/arancia.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de naranja</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card h-100 d-block w-100">
+            <img src="../imagenes/menta.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de Menta</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card h-100">
+            <img src="../imagenes/limon.png" class="card-img-top" alt="planta-aceite">
+            <div class="card-body">
+              <h5 class="card-title">Aceite de limon</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <span>
+                Valoracion:
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 
 
 
-  
+  <!------------------------quote-->
+  <div class="container mt-5">
+    <h4 class="animate__animated animate__heartBeat text-center m-4">Dicen de nuestros productos:</h4>
+    <div class="row mt-5">
+      <div class="col-md-6 offset-md-3 h-100" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="mb-3 card__quote border">
+          <div class="row g-0">
+            <div class="col-md">
+              <img src="../imagenes/gracias.jpg" class=" h-100 w-auto img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md">
+              <figure class="mx-auto">
+                <blockquote class="blockquote p-3">
+                  <i class="ii fs-1 bi bi-chat-left-quote-fill"></i>
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer p-5">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 offset-md-3 h-100" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="mb-3 card__quote border">
+          <div class="row g-0">
+            <div class="col-md">
+              <img src="../imagenes/gracias2.jpg" class=" h-100 img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md">
+              <figure class="mx-auto">
+                <blockquote class="blockquote p-3">
+                  <i class="ii fs-1 bi bi-chat-left-quote-fill"></i>
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer p-5">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
   <!--------------------------------------------------------------------Footer---------------------------------->
-  <footer class=" footer container h-25 mt-5 border rounded">
+  <footer class=" footer container h-25 mt-5 p-2 border rounded">
     <div class="row">
       <div class="col-sm-4 text-center">
-        <h3 class="foot__h3">Contactos</h3>
+        <h6 class="foot__h3">Contactos</h6>
         <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
-          <img class="img__foot img-fluid mt-2" src="../imagenes/icon_whats.png" alt="aroma_footer1_whats" w />
+          <img class="img__foot-wapp mt-2" src="../imagenes/icon_whats.png" alt="aroma_footer1_whats" w />
         </a>
       </div>
       <div class="col-sm-4 text-center">
-        <h3 class="foot__h3">Donde estamos</h3>
+        <h6 class="foot__h3">Donde estamos</h6>
         <a
           href="https://www.google.it/maps/place/Aroma+Vida/@20.757731,-103.3887831,17z/data=!3m1!4b1!4m6!3m5!1s0xfb5ce9c3942240f:0xad40e891245f3936!8m2!3d20.757731!4d-103.3862082!16s%2Fg%2F11rcynngky?entry=ttu">
           <img class="img__foot img-fluid mt-2" src="../imagenes/gps.jpg" alt="gps" />
         </a>
       </div>
       <div class="col-sm-4 ">
-        <h3 class="foot__h3 text-center">Inscribete a nuestras newsletter!</h3>
+        <h6 class="foot__h3 text-center">Inscribete a nuestras newsletter!</h6>
         <div class="ps-5">
 
           <input class="mt-2" type="email" id="email" placeholder="Escribas aqui tu correo" />
@@ -110,16 +488,25 @@
         </div>
       </div>
     </div>
-    <div class="foot__copyright text-center border rounded h-25 p-3">
-        © 2023 Copyright: Bassi Luca - Aroma Vida
-      </div>
+
   </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+
+  <div class="foot__copyright text-center border rounded h-25 p-3">
+    © 2023 Copyright: Bassi Luca - Aroma Vida
+  </div>
 </body>
 
 </html>
