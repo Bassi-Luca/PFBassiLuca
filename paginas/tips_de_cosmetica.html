@@ -13,7 +13,6 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.flaticon.com/free-icons/search" title="search icons" />
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -37,18 +36,16 @@
       <ul class="navbar-nav nav-underline">
         <li class="nav-item">
           <a class="nav-link text-center text-white" href="../index.html">
-            <img class="nav-icon d-block img-fluid" src="../imagenes/icon-house2.png" alt="home" />
+            <img class="nav-icon d-block img-fluid" src="../imagenes/icon-house.png" alt="home" />
             Inicio
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link text-center text-white" href="../paginas/area_bienestar.html">
             <img class="nav-icon mx-auto d-block img-fluid" src="../imagenes/icon-spa.png" alt="wellnes" />
             Aceites esenciales
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link text-center text-white" href="../paginas/ideas_para_cocinar.html">
             <img class="nav-icon mx-auto d-block img-fluid" src="../imagenes/icon-diet.png" alt="diet" />
@@ -68,11 +65,57 @@
           </a>
         </li>
       </ul>
-      <input type="search" class="buscador p-2" name="buscador" placeholder="Buscar aqui">
+      <div class="buscador">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar aqui" aria-label="Search">
+          <button class="btn-bd-search" type="submit">Busca!</button>
+        </form>
+      </div>
     </div>
-
   </nav>
 
+  <!--mobile header -->
+  <div class="container header__mobile">
+    <div class="row">
+      <div class="col-9 mt-4">
+        <div class="header__img border rounded-5">
+          <h1 class="h1__tit p-3">Nuestros tips!</h1>
+          <p class="p__titulo text-center">
+            Consejos para tu bienestar!
+          </p>
+        </div>
+      </div>
+      <div class="col-3 info__buscador text-center">
+        <div class="col-sm mt-3 m-auto">
+          <a href="https://www.facebook.com">
+            <img class="img-fluid mx-auto px-2" src="../imagenes/fb-logo.png" alt="fb-logo" />
+          </a>
+        </div>
+        <div class="col-sm my-4 m-auto">
+          <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
+            <img class="img-fluid px-2" src="../imagenes/icon_whats.png" alt="whats-logo" />
+          </a>
+        </div>
+        <div class="col-sm my-4 m-auto">
+          <img class="img-fluid px-2" src="../imagenes/search.png" alt="search-logo type=" button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" />
+          <!-- offcanvas para buscar en mobile -->
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Que quieres buscar?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar aqui" aria-label="Search">
+                <button class="btn-bd-search" type="submit">Busca!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container mt-5">
     <div class="col-12">
@@ -96,18 +139,17 @@
         <div class="card card__tips p-1">
           <div class="card-body">
             <h5 class="card-title">Tips 2</h5>
-            <p class="card-text pb-5">Hay tantas formas creativas de usar todas las gotas de aceite esencial en cada botella
+            <p class="card-text pb-5">Hay tantas formas creativas de usar todas las gotas de aceite esencial en cada
+              botella
               de aceite de vidrio.
               En este video, queremos mostrarte cómo usar los aceites esenciales de maneras que beneficien tu rutina
               diaria y, con suerte, te ayuden a descubrir algo nuevo. ¡Mira ahora 36 consejos sobre aceites esenciales
               para ayudarte a vivir tu mejor vida aceitosa!.</p>
-
           </div>
           <iframe src="https://www.youtube.com/embed/7mu-hr3E92Q?si=lvtiNOKIo9WW2JKH" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-
         </div>
       </div>
       <div class="col m-3">
@@ -126,7 +168,6 @@
     </div>
   </div>
 
-
   <!--------------------------------------------------------------------Footer---------------------------------->
   <footer class=" footer container h-25 mt-5 p-2 border rounded">
     <div class="row">
@@ -143,12 +184,13 @@
           <img class="img__foot img-fluid mt-2" src="../imagenes/gps.jpg" alt="gps" />
         </a>
       </div>
-      <div class="col-sm-4 ">
-        <h3 class="foot__h3 text-center">Inscribete a nuestras newsletter!</h3>
+      <div class="col-sm-4 text-wrap ">
+        <h3 class="foot__h3 text-center ">Inscribete a nuestras newsletter!</h3>
         <div class="ps-5">
-
-          <input class="mt-2" type="email" id="email" placeholder="Escribas aqui tu correo" />
-          <input class="foot__input-text-seccion" type="submit" value="Inscribete" />
+          <form class="d-flex" role="search">
+            <input type="email" class="form-control me-2" id="exampleFormControlInput1" placeholder="name@example.com" aria-label="Newsletter">
+            <input class="btn-bd-primary" type="submit" value="Inscribete"/>
+          </form>
         </div>
         <div class="foot__fb mt-3 ps-5">Siguenos tambien en:
           <a href="https://www.facebook.com">
@@ -157,21 +199,16 @@
         </div>
       </div>
     </div>
-
   </footer>
-
+  <div class="foot__copyright text-center border rounded h-25 p-3">
+    © 2023 Copyright: Bassi Luca - Aroma Vida
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script> AOS.init();</script>
-
-  <div class="foot__copyright text-center border rounded h-25 p-3">
-    © 2023 Copyright: Bassi Luca - Aroma Vida
-  </div>
 </body>
-
 
 </html>

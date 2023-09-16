@@ -1,12 +1,44 @@
-/*Variables*/
-/*---------------Parte general------------*/
 * {
-  padding: auto;
   box-sizing: border-box;
 }
 
-.body {
-  background: #be53f3;
+body {
+  overflow-x: hidden;
+}
+
+/*Variables*/
+.btn-bd-primary {
+  background-color: #be53f3;
+  color: #f1f1f1;
+  border-color: #be53f3;
+  padding: 5px 10px 5px 10px;
+  border-radius: 12px;
+}
+.btn-bd-primary:hover {
+  color: #be53f3;
+  background-color: white;
+  border-color: #be53f3;
+}
+
+.btn-bd-search {
+  background-color: #f1f1f1;
+  color: #be53f3;
+  border-color: #f1f1f1;
+  padding: 5px 10px 5px 10px;
+  border-radius: 12px;
+}
+.btn-bd-search:hover {
+  color: #f1f1f1;
+  background-color: #be53f3;
+  border-color: #f1f1f1;
+}
+
+/*---------------Parte general------------*/
+main {
+  background-color: #be53f3;
+}
+main .main__white {
+  background-color: #f1f1f1;
 }
 
 /*---------------Header------------------------------*/
@@ -15,7 +47,7 @@
   margin-right: 20px;
   display: inline-block;
   border-radius: 50%;
-  width: 40%;
+  width: 30%;
 }
 
 .h1__tit {
@@ -34,17 +66,26 @@
 }
 
 .info__buscador img {
-  width: 50%;
-  display: block;
-  justify-items: stretch;
-  /*border: 3px solid red;*/
+  min-width: 70px;
+  width: 80px;
 }
 
 /*----------------------------------------navbar-------*/
-nav {
-  /*border: 2px solid blue;*/
+.navbar__menu {
   background-color: #be53f3;
-  z-index: 4;
+}
+.navbar__menu .nav-link {
+  padding-right: 1px;
+}
+.navbar__menu .text-sm {
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.navbar__menu .nav-icon {
+  width: 35px;
+  margin: auto;
+  filter: brightness(0) invert(1);
 }
 
 .navbar-brand img {
@@ -84,18 +125,9 @@ li a {
   text-decoration: none;
 }
 
-.buscador {
-  float: right;
-  width: auto;
-  height: auto;
-  border-radius: 20px;
-  font-size: 20px;
-  background: aliceblue;
-  margin-right: 3px;
-}
-
 .header__img {
   background-color: #be53f3;
+  background-size: cover;
 }
 
 @media screen and (min-width: 999px) {
@@ -107,11 +139,7 @@ li a {
   }*/
 }
 @media screen and (max-width: 1000px) {
-  .body {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .body__mobile {
+  main {
     background-color: #f1f1f1;
   }
   .header__tablet-pc {
@@ -126,14 +154,17 @@ li a {
   .text-block {
     display: none;
   }
-  #header__img-intro {
+  .header__img-intro {
     display: none;
   }
   .navbar__menu {
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    margin: 0;
+    z-index: 3;
+  }
+  .nav-icon {
+    width: 20px;
   }
   ul {
     width: 100%;
@@ -143,22 +174,14 @@ li a {
 }
 /*-------------------------heaedr tablet-pc*/
 .logo_pc {
-  margin-right: 20px;
-  display: inline-block;
+  margin-right: 5px;
   border-radius: 50%;
-  width: 70%;
-}
-
-#header__img-intro {
-  padding-top: 10px;
-  width: 100%;
-  height: 545px;
-  border-radius: 0px;
+  width: 50%;
 }
 
 .text-block {
   position: absolute;
-  top: 280px;
+  top: 350px;
   width: 650px;
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
@@ -181,34 +204,19 @@ li a {
   width: 447px;
   font-family: Alegreya Sans;
   font-size: 50px;
-  line-height: 40px;
   color: aliceblue;
   font-style: italic;
 }
 
 /*--------------------fin de header--------------*/
 /*----------Secciones----------------------*/
-/*.row {
-    /*border: 2px solid red;
-  }*/
-.col {
-  /*border: 6px solid blue;*/
-  width: 500px;
-}
-
-.col-sm-6 {
-  /*border: 6px solid green;*/
-  height: 288px;
-}
-
 .seccion {
   margin-top: 150px;
   background-color: #f1f1f1;
 }
-
-.col-sm-6 .seccion__img {
+.seccion .seccion__img {
   width: 100%;
-  height: 288px;
+  height: 350px;
   border-radius: 2px;
   object-fit: content;
   -webkit-mask-image: linear-gradient(to right, black, transparent);
@@ -216,22 +224,7 @@ li a {
 }
 
 iframe {
-  height: 264px;
-}
-
-.input-text-seccion, .foot__input-text-seccion {
-  height: 52px;
-  padding: 0 20px;
-  align-items: center;
-  justify-content: center;
-  font-family: Alegreya Sans; /* Body */
-  font-size: 20px;
-  line-height: 28px;
-  color: white; /* white */
-  background: #4faef3; /* primary-500 */
-  opacity: 1;
-  border: none;
-  border-radius: 1px;
+  height: 350px;
 }
 
 .p__seccion {

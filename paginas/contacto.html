@@ -20,9 +20,11 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  
-  <meta name="description" content="Aroma Vida sitio de infomracion sobre aceites esenciales | seccion de tips para el bienestar">
-  <meta name="keywords" content="aceites, aroma, bienestar, spa, salud, tips, cosmetic, rool on, venta, aromaterapia, mensajes, info, correo, escribir, opiniones">
+
+  <meta name="description"
+    content="Aroma Vida sitio de infomracion sobre aceites esenciales | seccion de tips para el bienestar">
+  <meta name="keywords"
+    content="aceites, aroma, bienestar, spa, salud, tips, cosmetic, rool on, venta, aromaterapia, mensajes, info, correo, escribir, opiniones">
   <title>Aroma vida | Contactos| sitio de aromaterapia en Guadalajara</title>
 </head>
 
@@ -36,18 +38,16 @@
       <ul class="navbar-nav nav-underline">
         <li class="nav-item">
           <a class="nav-link text-center text-white" href="../index.html">
-            <img class="nav-icon d-block img-fluid" src="../imagenes/icon-house2.png" alt="home" />
+            <img class="nav-icon d-block img-fluid" src="../imagenes/icon-house.png" alt="home" />
             Inicio
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link text-center text-white" href="../paginas/area_bienestar.html">
             <img class="nav-icon mx-auto d-block img-fluid" src="../imagenes/icon-spa.png" alt="wellnes" />
             Aceites esenciales
           </a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link text-center text-white" href="../paginas/ideas_para_cocinar.html">
             <img class="nav-icon mx-auto d-block img-fluid" src="../imagenes/icon-diet.png" alt="diet" />
@@ -67,16 +67,19 @@
           </a>
         </li>
       </ul>
-      <input type="search" class="buscador p-2" name="buscador" placeholder="Buscar aqui">
+      <div class="buscador">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar aqui" aria-label="Search">
+          <button class="btn-bd-search" type="submit">Busca!</button>
+        </form>
+      </div>
     </div>
-
   </nav>
-
 
   <!--mobile header -->
   <div class="header__mobile grid header container">
     <div class="row mt-4">
-      <div class="col-9 text-center  px-3">
+      <div class="col-9 text-center px-3">
         <div class="header__img border rounded-5">
           <h1 class="h1__tit pt-3">Contactos</h1>
           <p class="p__titulo">
@@ -84,24 +87,22 @@
           </p>
         </div>
       </div>
-      <div class="row info__buscador col mt-4">
-        <div class="col w-50 p-2">
+      <div class="col-3 info__buscador text-center">
+        <div class="col-sm mt-3 m-auto">
           <a href="https://www.facebook.com">
-            <img class="rounded-circle" src="../imagenes/fb-logo.png" alt="fb-logo" />
+            <img class="img-fluid mx-auto px-2" src="../imagenes/fb-logo.png" alt="fb-logo" />
           </a>
         </div>
-        <div class="col-img p-2">
+        <div class="col-sm my-4 m-auto">
           <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
-            <img class="rounded-circle" src="../imagenes/icon_whats.png" alt="whats-logo" />
+            <img class="img-fluid px-2" src="../imagenes/icon_whats.png" alt="whats-logo" />
           </a>
         </div>
-
       </div>
     </div>
   </div>
 
   <!--header tablet-pc-->
-
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-3">
@@ -127,9 +128,7 @@
               <option>Sobre un producto</option>
               <option>Preparacion aceites</option>
               <option>Otros</option>
-
             </select>
-
             <label class="mt-4" for="comment">Tu comentario:</label>
             <textarea class="form-control" rows="20" id="comment" name="text"
               placeholder="Escribas aqui tu pregunta"></textarea>
@@ -140,17 +139,14 @@
               <label class="form-check-label" for="gridCheck">
                 Control de datos
               </label>
-              <button type="submit" class="btn btn-primary">Envia</button>
+              <button type="submit" class="btn-bd-primary">Envia</button>
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
-
   </div>
-  <!---->
-
 
   <!--------------------------------------------------------------------Footer---------------------------------->
   <footer class=" footer container h-25 mt-5 p-2 border rounded">
@@ -168,12 +164,14 @@
           <img class="img__foot img-fluid mt-2" src="../imagenes/gps.jpg" alt="gps" />
         </a>
       </div>
-      <div class="col-sm-4 ">
-        <h3 class="foot__h3 text-center">Inscribete a nuestras newsletter!</h3>
+      <div class="col-sm-4 text-wrap ">
+        <h3 class="foot__h3 text-center ">Inscribete a nuestras newsletter!</h3>
         <div class="ps-5">
-
-          <input class="mt-2" type="email" id="email" placeholder="Escribas aqui tu correo" />
-          <input class="foot__input-text-seccion" type="submit" value="Inscribete" />
+          <form class="d-flex" role="search">
+            <input type="email" class="form-control me-2" id="exampleFormControlInput1" placeholder="name@example.com"
+              aria-label="Newsletter">
+            <input class="btn-bd-primary" type="submit" value="Inscribete" />
+          </form>
         </div>
         <div class="foot__fb mt-3 ps-5">Siguenos tambien en:
           <a href="https://www.facebook.com">
@@ -182,9 +180,7 @@
         </div>
       </div>
     </div>
-
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
