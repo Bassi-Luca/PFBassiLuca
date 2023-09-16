@@ -20,7 +20,10 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Aroma vida</title>
+
+  <meta name="description" content="Aroma Vida sitio de informacion sobre aceites esenciales">
+  <meta name="keywords" content="aceites, aroma, bienestar, spa, salud aromaterapia, vaporizador, beneficios, recetas, cocina, comida">
+  <title>Aroma vida | Ideas para cocinar | Sitio de aromaterapia en Guadalajara </title>
 </head>
 
 <body class="body border rounded ">
@@ -71,13 +74,60 @@
     </div>
   </nav>
 
-
-  <div class="container-fluid mt-5 mb-5 text-center">
-    <img src="../imagenes/404.png" class="img-fluid">
-    <div class="mt-5 mb-5">
-      <a href="../index.html" class="btn-bd-primary">Regresar a la pagina principal</a>
+  <!--mobile header -->
+  <div class="container header__mobile">
+    <div class="row">
+      <div class="col-9 mt-4">
+        <div class="header__img border rounded-5">
+          <h1 class="h1__tit p-3">Ideas saludables!</h1>
+          <p class="p__titulo text-center">
+            Recetas para tu bienestar integral!
+          </p>
+        </div>
+      </div>
+      <div class="col-3 info__buscador text-center">
+        <div class="col-sm mt-3 m-auto">
+          <a href="https://www.facebook.com">
+            <img class="img-fluid mx-auto px-2" src="../imagenes/fb-logo.png" alt="fb-logo" />
+          </a>
+        </div>
+        <div class="col-sm my-4 m-auto">
+          <a href="https://wa.me/message/B2QEUV5ZSVIFL1">
+            <img class="img-fluid px-2" src="../imagenes/icon_whats.png" alt="whats-logo" />
+          </a>
+        </div>
+        <div class="col-sm my-4 m-auto">
+          <img class="img-fluid px-2" src="../imagenes/search.png" alt="search-logo type=" button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" />
+          <!-- offcanvas para buscar en mobile -->
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Que quieres buscar?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar aqui" aria-label="Search">
+                <button class="btn-bd-search" type="submit">Busca!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <main class="bg-white">
+    <div class="container-fluid text-center mt-5">
+      <div>
+        <img src="../imagenes/Work-in-Progress-4247752775" class="img-fluid w-25" alt="Progress">
+        <div class="card-body">
+          <h5 class="card-title">Trabajo en progreso</h5>
+          <p class="card-text">Trabajamos para ofecerte un servizio unico.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 1 day ago</small></p>
+        </div>
+    </div>
+  </main>
+  
 
 
 
