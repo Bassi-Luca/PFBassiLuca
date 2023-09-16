@@ -213,7 +213,7 @@ li a {
 }
 .seccion .seccion__img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   border-radius: 2px;
   object-fit: content;
   -webkit-mask-image: linear-gradient(to right, black, transparent);
