@@ -30,7 +30,7 @@ $background-white: #f1f1f1;
   }
 }
 
-.btn-bd-search{
+.btn-bd-search {
   background-color: $background-white;
   color: $color-lavanda;
   border-color: $background-white;
@@ -38,7 +38,7 @@ $background-white: #f1f1f1;
   border-radius: 12px;
   &:hover {
     color: $background-white;
-    background-color:$color-lavanda;
+    background-color: $color-lavanda;
     border-color: $background-white;
   }
 }
@@ -62,7 +62,7 @@ $background-white: #f1f1f1;
 /*---------------Parte general------------*/
 main {
   background-color: $color-lavanda;
-  .main__white{
+  .main__white {
     background-color: $background-white;
   }
 }
@@ -93,8 +93,8 @@ main {
 
 .info__buscador img {
   min-width: 70px;
-  width: 80px;  
-  }
+  width: 80px;
+}
 
 /*----------------------------------------navbar-------*/
 .navbar__menu {
@@ -113,12 +113,6 @@ main {
     filter: brightness(0) invert(1);
   }
 }
-
-// nav {
-//   /*border: 2px solid blue;*/
-//   background-color: $color-lavanda;
-//   z-index: 4;
-// }
 
 .navbar-brand img {
   height: 100px;
@@ -166,11 +160,8 @@ li a {
   .header__mobile {
     display: none;
   }
-
-  /*.body {
-    background-color: aqua;
-  }*/
 }
+
 @media screen and (max-width: 1000px) {
   main {
     background-color: $background-white;
@@ -279,8 +270,6 @@ li a {
     @include image-gradient;
   }
 }
-
-
 
 iframe {
   height: 350px;
